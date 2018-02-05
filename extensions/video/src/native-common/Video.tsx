@@ -40,7 +40,7 @@ class Video extends RX.Component<Types.VideoProps, VideoState> {
                 paused={ !this.state.isPlaying }
                 muted={ this.state.isMuted }
                 repeat={ this.props.loop }
-                source={ { uri: this.props.source } }
+                source={ this.props.source }
                 style={ this.props.style }
                 onEnd={ this._onEnd }
                 onBuffer={ this._onBuffer }

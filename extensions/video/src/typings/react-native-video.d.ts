@@ -35,14 +35,7 @@ declare module 'react-native-video' {
     }
 
     interface VideoProps extends RN.ComponentPropsBase {
-        source: {
-            uri: string;
-            type?: string;
-
-            // Some versions of react-native-video may not support this option.
-            authToken?: string;
-        };
-
+        source: any;
         resizeMode?: string;
         poster?: string;
         repeat?: boolean;
